@@ -4,7 +4,7 @@ import json
 # Global client initialization
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key="-----------------------OpenRouterKey----------------------------",
 )
 
 def get_answer(parser_output, org_question):
