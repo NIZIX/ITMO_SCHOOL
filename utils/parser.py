@@ -2,7 +2,7 @@ import json
 from tavily import TavilyClient
 
 def parse(query):
-    client = TavilyClient(api_key="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")
+    client = TavilyClient(api_key="-----------------------TavilyKey------------------------")
     
     search_output = client.search(query, 
                                       include_answer="advanced", 
