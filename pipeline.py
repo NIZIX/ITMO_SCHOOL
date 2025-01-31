@@ -14,15 +14,14 @@ def pipeline_search(question: str) -> Tuple[Optional[int], Optional[str], List[H
     :return: Tuple of (answer, reasoning, sources)
     """
     try:
-        # Perform search and parsing
         search_query = get_search_query(question)
         parser_output = parse(search_query)
         
-        # Get the answer from the model
         llm_response = get_answer(parser_output, question)
         
         answer, reasoning, sources = parse_model_output(llm_response)
-        # print(answer, reasoning, sources)
+        
+        reasoning = "# Ответ модели - llama-3.1-70b-instruct #\n" + reasoning
         
         return answer, reasoning, sources
     
