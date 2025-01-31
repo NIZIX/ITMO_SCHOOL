@@ -28,11 +28,3 @@ def pipeline_search(question: str) -> Tuple[Optional[int], Optional[str], List[H
     except Exception as e:
         print(f"Error in pipeline search: {e}")
         return None, None, []
-
-# def main():
-#     question = "Гарри Поттер"
-#     result = pipeline_search(question)
-#     print(result)
-
-# if __name__ == '__main__':
-#     main()
