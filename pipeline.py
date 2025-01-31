@@ -27,4 +27,4 @@ def pipeline_search(question: str) -> Tuple[Optional[int], Optional[str], List[H
     
     except Exception as e:
         print(f"Error in pipeline search: {e}")
-        return None, None, []
+        return None, "", []
